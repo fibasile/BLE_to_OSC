@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F408D0AF184A4A7C00AC5FF0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F408D0AE184A4A7C00AC5FF0 /* Cocoa.framework */; };
+		F408D0B9184A4A7D00AC5FF0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F408D0B7184A4A7C00AC5FF0 /* InfoPlist.strings */; };
+		F408D0BB184A4A7D00AC5FF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F408D0BA184A4A7D00AC5FF0 /* main.m */; };
+		F408D0BF184A4A7D00AC5FF0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F408D0BD184A4A7D00AC5FF0 /* Credits.rtf */; };
+		F408D0C2184A4A7D00AC5FF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F408D0C1184A4A7D00AC5FF0 /* AppDelegate.m */; };
+		F408D0C5184A4A7D00AC5FF0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F408D0C3184A4A7D00AC5FF0 /* MainMenu.xib */; };
+		F408D0C7184A4A7D00AC5FF0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F408D0C6184A4A7D00AC5FF0 /* Images.xcassets */; };
+		F408D0CE184A4A7D00AC5FF0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F408D0CD184A4A7D00AC5FF0 /* XCTest.framework */; };
+		F408D0CF184A4A7D00AC5FF0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F408D0AE184A4A7C00AC5FF0 /* Cocoa.framework */; };
+		F408D0D7184A4A7D00AC5FF0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F408D0D5184A4A7D00AC5FF0 /* InfoPlist.strings */; };
+		F408D0D9184A4A7D00AC5FF0 /* BleToOSCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F408D0D8184A4A7D00AC5FF0 /* BleToOSCTests.m */; };
+		F408D0EB184A4A8D00AC5FF0 /* ADCircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = F408D0E3184A4A8D00AC5FF0 /* ADCircularBuffer.c */; };
+		F408D0EC184A4A8D00AC5FF0 /* SensorDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = F408D0E6184A4A8D00AC5FF0 /* SensorDevice.m */; };
+		F408D0ED184A4A8D00AC5FF0 /* SensorFirmata.m in Sources */ = {isa = PBXBuildFile; fileRef = F408D0E8184A4A8D00AC5FF0 /* SensorFirmata.m */; };
+		F408D0EE184A4A8D00AC5FF0 /* SensorUART.m in Sources */ = {isa = PBXBuildFile; fileRef = F408D0EA184A4A8D00AC5FF0 /* SensorUART.m */; };
+		F408D0F0184A4B7200AC5FF0 /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F408D0EF184A4B7200AC5FF0 /* IOBluetooth.framework */; };
+		F408D102184A4C9100AC5FF0 /* NS+OSCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F408D0F8184A4C9100AC5FF0 /* NS+OSCAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F408D103184A4C9100AC5FF0 /* OSCConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F408D0FA184A4C9100AC5FF0 /* OSCConnection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F408D104184A4C9100AC5FF0 /* OSCDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F408D0FD184A4C9100AC5FF0 /* OSCDispatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F408D105184A4C9100AC5FF0 /* OSCPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = F408D0FF184A4C9100AC5FF0 /* OSCPacket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F408D10A184A4D8300AC5FF0 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F408D107184A4D8300AC5FF0 /* AsyncSocket.m */; };
+		F408D10B184A4D8300AC5FF0 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F408D109184A4D8300AC5FF0 /* AsyncUdpSocket.m */; };
+		F408D10F184A4E0500AC5FF0 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = F408D10E184A4E0500AC5FF0 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F408D112184A4E8700AC5FF0 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F408D111184A4E8700AC5FF0 /* CoreFoundation.framework */; };
+		F408D114184A4E9800AC5FF0 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F408D113184A4E9800AC5FF0 /* libicucore.dylib */; };
+		F408D117184B522500AC5FF0 /* SensorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F408D116184B522500AC5FF0 /* SensorViewController.m */; };
+		F408D11A184B523800AC5FF0 /* OSCServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F408D119184B523800AC5FF0 /* OSCServerViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F408D0D0184A4A7D00AC5FF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F408D0A3184A4A7C00AC5FF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F408D0AA184A4A7C00AC5FF0;
+			remoteInfo = BleToOSC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F408D0AB184A4A7C00AC5FF0 /* BleToOSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BleToOSC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F408D0AE184A4A7C00AC5FF0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F408D0B1184A4A7C00AC5FF0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F408D0B2184A4A7C00AC5FF0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F408D0B3184A4A7C00AC5FF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F408D0B6184A4A7C00AC5FF0 /* BleToOSC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BleToOSC-Info.plist"; sourceTree = "<group>"; };
+		F408D0B8184A4A7C00AC5FF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F408D0BA184A4A7D00AC5FF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F408D0BC184A4A7D00AC5FF0 /* BleToOSC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BleToOSC-Prefix.pch"; sourceTree = "<group>"; };
+		F408D0BE184A4A7D00AC5FF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F408D0C0184A4A7D00AC5FF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F408D0C1184A4A7D00AC5FF0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F408D0C4184A4A7D00AC5FF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F408D0C6184A4A7D00AC5FF0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F408D0CC184A4A7D00AC5FF0 /* BleToOSCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BleToOSCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F408D0CD184A4A7D00AC5FF0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F408D0D4184A4A7D00AC5FF0 /* BleToOSCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BleToOSCTests-Info.plist"; sourceTree = "<group>"; };
+		F408D0D6184A4A7D00AC5FF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F408D0D8184A4A7D00AC5FF0 /* BleToOSCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BleToOSCTests.m; sourceTree = "<group>"; };
+		F408D0E3184A4A8D00AC5FF0 /* ADCircularBuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ADCircularBuffer.c; sourceTree = "<group>"; };
+		F408D0E4184A4A8D00AC5FF0 /* ADCircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCircularBuffer.h; sourceTree = "<group>"; };
+		F408D0E5184A4A8D00AC5FF0 /* SensorDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SensorDevice.h; sourceTree = "<group>"; };
+		F408D0E6184A4A8D00AC5FF0 /* SensorDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SensorDevice.m; sourceTree = "<group>"; };
+		F408D0E7184A4A8D00AC5FF0 /* SensorFirmata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SensorFirmata.h; sourceTree = "<group>"; };
+		F408D0E8184A4A8D00AC5FF0 /* SensorFirmata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SensorFirmata.m; sourceTree = "<group>"; };
+		F408D0E9184A4A8D00AC5FF0 /* SensorUART.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SensorUART.h; sourceTree = "<group>"; };
+		F408D0EA184A4A8D00AC5FF0 /* SensorUART.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SensorUART.m; sourceTree = "<group>"; };
+		F408D0EF184A4B7200AC5FF0 /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+		F408D0F4184A4C9100AC5FF0 /* CocoaOSC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaOSC.h; sourceTree = "<group>"; };
+		F408D0F7184A4C9100AC5FF0 /* NS+OSCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NS+OSCAdditions.h"; sourceTree = "<group>"; };
+		F408D0F8184A4C9100AC5FF0 /* NS+OSCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NS+OSCAdditions.m"; sourceTree = "<group>"; };
+		F408D0F9184A4C9100AC5FF0 /* OSCConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCConnection.h; sourceTree = "<group>"; };
+		F408D0FA184A4C9100AC5FF0 /* OSCConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCConnection.m; sourceTree = "<group>"; };
+		F408D0FB184A4C9100AC5FF0 /* OSCConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCConnectionDelegate.h; sourceTree = "<group>"; };
+		F408D0FC184A4C9100AC5FF0 /* OSCDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCDispatcher.h; sourceTree = "<group>"; };
+		F408D0FD184A4C9100AC5FF0 /* OSCDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCDispatcher.m; sourceTree = "<group>"; };
+		F408D0FE184A4C9100AC5FF0 /* OSCPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCPacket.h; sourceTree = "<group>"; };
+		F408D0FF184A4C9100AC5FF0 /* OSCPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCPacket.m; sourceTree = "<group>"; };
+		F408D106184A4D8300AC5FF0 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncSocket.h; path = ../../deps/CocoaAsyncSocket/RunLoop/AsyncSocket.h; sourceTree = "<group>"; };
+		F408D107184A4D8300AC5FF0 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncSocket.m; path = ../../deps/CocoaAsyncSocket/RunLoop/AsyncSocket.m; sourceTree = "<group>"; };
+		F408D108184A4D8300AC5FF0 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncUdpSocket.h; path = ../../deps/CocoaAsyncSocket/RunLoop/AsyncUdpSocket.h; sourceTree = "<group>"; };
+		F408D109184A4D8300AC5FF0 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncUdpSocket.m; path = ../../deps/CocoaAsyncSocket/RunLoop/AsyncUdpSocket.m; sourceTree = "<group>"; };
+		F408D10D184A4E0500AC5FF0 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegexKitLite.h; path = "../../deps/RegexKitLite-4.0/RegexKitLite.h"; sourceTree = "<group>"; };
+		F408D10E184A4E0500AC5FF0 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegexKitLite.m; path = "../../deps/RegexKitLite-4.0/RegexKitLite.m"; sourceTree = "<group>"; };
+		F408D111184A4E8700AC5FF0 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		F408D113184A4E9800AC5FF0 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		F408D115184B522500AC5FF0 /* SensorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SensorViewController.h; sourceTree = "<group>"; };
+		F408D116184B522500AC5FF0 /* SensorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SensorViewController.m; sourceTree = "<group>"; };
+		F408D118184B523800AC5FF0 /* OSCServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCServerViewController.h; sourceTree = "<group>"; };
+		F408D119184B523800AC5FF0 /* OSCServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCServerViewController.m; sourceTree = "<group>"; };
+		F408D11B184B53A500AC5FF0 /* SensorPacketConsumer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SensorPacketConsumer.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F408D0A8184A4A7C00AC5FF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F408D114184A4E9800AC5FF0 /* libicucore.dylib in Frameworks */,
+				F408D112184A4E8700AC5FF0 /* CoreFoundation.framework in Frameworks */,
+				F408D0F0184A4B7200AC5FF0 /* IOBluetooth.framework in Frameworks */,
+				F408D0AF184A4A7C00AC5FF0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F408D0C9184A4A7D00AC5FF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F408D0CF184A4A7D00AC5FF0 /* Cocoa.framework in Frameworks */,
+				F408D0CE184A4A7D00AC5FF0 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F408D0A2184A4A7C00AC5FF0 = {
+			isa = PBXGroup;
+			children = (
+				F408D0B4184A4A7C00AC5FF0 /* BleToOSC */,
+				F408D0D2184A4A7D00AC5FF0 /* BleToOSCTests */,
+				F408D0AD184A4A7C00AC5FF0 /* Frameworks */,
+				F408D0AC184A4A7C00AC5FF0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F408D0AC184A4A7C00AC5FF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F408D0AB184A4A7C00AC5FF0 /* BleToOSC.app */,
+				F408D0CC184A4A7D00AC5FF0 /* BleToOSCTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F408D0AD184A4A7C00AC5FF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F408D113184A4E9800AC5FF0 /* libicucore.dylib */,
+				F408D111184A4E8700AC5FF0 /* CoreFoundation.framework */,
+				F408D0EF184A4B7200AC5FF0 /* IOBluetooth.framework */,
+				F408D0AE184A4A7C00AC5FF0 /* Cocoa.framework */,
+				F408D0CD184A4A7D00AC5FF0 /* XCTest.framework */,
+				F408D0B0184A4A7C00AC5FF0 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F408D0B0184A4A7C00AC5FF0 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F408D0B1184A4A7C00AC5FF0 /* AppKit.framework */,
+				F408D0B2184A4A7C00AC5FF0 /* CoreData.framework */,
+				F408D0B3184A4A7C00AC5FF0 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F408D0B4184A4A7C00AC5FF0 /* BleToOSC */ = {
+			isa = PBXGroup;
+			children = (
+				F408D110184A4E0B00AC5FF0 /* RegexKitLite */,
+				F408D10C184A4D8800AC5FF0 /* AsyncSocket */,
+				F408D0F1184A4C9100AC5FF0 /* CocoaOSC */,
+				F408D0E2184A4A8D00AC5FF0 /* SensorFirmata */,
+				F408D0C0184A4A7D00AC5FF0 /* AppDelegate.h */,
+				F408D0C1184A4A7D00AC5FF0 /* AppDelegate.m */,
+				F408D11B184B53A500AC5FF0 /* SensorPacketConsumer.h */,
+				F408D115184B522500AC5FF0 /* SensorViewController.h */,
+				F408D116184B522500AC5FF0 /* SensorViewController.m */,
+				F408D118184B523800AC5FF0 /* OSCServerViewController.h */,
+				F408D119184B523800AC5FF0 /* OSCServerViewController.m */,
+				F408D0C3184A4A7D00AC5FF0 /* MainMenu.xib */,
+				F408D0C6184A4A7D00AC5FF0 /* Images.xcassets */,
+				F408D0B5184A4A7C00AC5FF0 /* Supporting Files */,
+			);
+			path = BleToOSC;
+			sourceTree = "<group>";
+		};
+		F408D0B5184A4A7C00AC5FF0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F408D0B6184A4A7C00AC5FF0 /* BleToOSC-Info.plist */,
+				F408D0B7184A4A7C00AC5FF0 /* InfoPlist.strings */,
+				F408D0BA184A4A7D00AC5FF0 /* main.m */,
+				F408D0BC184A4A7D00AC5FF0 /* BleToOSC-Prefix.pch */,
+				F408D0BD184A4A7D00AC5FF0 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F408D0D2184A4A7D00AC5FF0 /* BleToOSCTests */ = {
+			isa = PBXGroup;
+			children = (
+				F408D0D8184A4A7D00AC5FF0 /* BleToOSCTests.m */,
+				F408D0D3184A4A7D00AC5FF0 /* Supporting Files */,
+			);
+			path = BleToOSCTests;
+			sourceTree = "<group>";
+		};
+		F408D0D3184A4A7D00AC5FF0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F408D0D4184A4A7D00AC5FF0 /* BleToOSCTests-Info.plist */,
+				F408D0D5184A4A7D00AC5FF0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F408D0E2184A4A8D00AC5FF0 /* SensorFirmata */ = {
+			isa = PBXGroup;
+			children = (
+				F408D0E3184A4A8D00AC5FF0 /* ADCircularBuffer.c */,
+				F408D0E4184A4A8D00AC5FF0 /* ADCircularBuffer.h */,
+				F408D0E5184A4A8D00AC5FF0 /* SensorDevice.h */,
+				F408D0E6184A4A8D00AC5FF0 /* SensorDevice.m */,
+				F408D0E7184A4A8D00AC5FF0 /* SensorFirmata.h */,
+				F408D0E8184A4A8D00AC5FF0 /* SensorFirmata.m */,
+				F408D0E9184A4A8D00AC5FF0 /* SensorUART.h */,
+				F408D0EA184A4A8D00AC5FF0 /* SensorUART.m */,
+			);
+			name = SensorFirmata;
+			path = ../../SensorFirmata;
+			sourceTree = "<group>";
+		};
+		F408D0F1184A4C9100AC5FF0 /* CocoaOSC */ = {
+			isa = PBXGroup;
+			children = (
+				F408D0F4184A4C9100AC5FF0 /* CocoaOSC.h */,
+				F408D0F7184A4C9100AC5FF0 /* NS+OSCAdditions.h */,
+				F408D0F8184A4C9100AC5FF0 /* NS+OSCAdditions.m */,
+				F408D0F9184A4C9100AC5FF0 /* OSCConnection.h */,
+				F408D0FA184A4C9100AC5FF0 /* OSCConnection.m */,
+				F408D0FB184A4C9100AC5FF0 /* OSCConnectionDelegate.h */,
+				F408D0FC184A4C9100AC5FF0 /* OSCDispatcher.h */,
+				F408D0FD184A4C9100AC5FF0 /* OSCDispatcher.m */,
+				F408D0FE184A4C9100AC5FF0 /* OSCPacket.h */,
+				F408D0FF184A4C9100AC5FF0 /* OSCPacket.m */,
+			);
+			name = CocoaOSC;
+			path = ../../deps/CocoaOSC/CocoaOSC;
+			sourceTree = "<group>";
+		};
+		F408D10C184A4D8800AC5FF0 /* AsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				F408D106184A4D8300AC5FF0 /* AsyncSocket.h */,
+				F408D107184A4D8300AC5FF0 /* AsyncSocket.m */,
+				F408D108184A4D8300AC5FF0 /* AsyncUdpSocket.h */,
+				F408D109184A4D8300AC5FF0 /* AsyncUdpSocket.m */,
+			);
+			name = AsyncSocket;
+			sourceTree = "<group>";
+		};
+		F408D110184A4E0B00AC5FF0 /* RegexKitLite */ = {
+			isa = PBXGroup;
+			children = (
+				F408D10D184A4E0500AC5FF0 /* RegexKitLite.h */,
+				F408D10E184A4E0500AC5FF0 /* RegexKitLite.m */,
+			);
+			name = RegexKitLite;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F408D0AA184A4A7C00AC5FF0 /* BleToOSC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F408D0DC184A4A7D00AC5FF0 /* Build configuration list for PBXNativeTarget "BleToOSC" */;
+			buildPhases = (
+				F408D0A7184A4A7C00AC5FF0 /* Sources */,
+				F408D0A8184A4A7C00AC5FF0 /* Frameworks */,
+				F408D0A9184A4A7C00AC5FF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BleToOSC;
+			productName = BleToOSC;
+			productReference = F408D0AB184A4A7C00AC5FF0 /* BleToOSC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F408D0CB184A4A7D00AC5FF0 /* BleToOSCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F408D0DF184A4A7D00AC5FF0 /* Build configuration list for PBXNativeTarget "BleToOSCTests" */;
+			buildPhases = (
+				F408D0C8184A4A7D00AC5FF0 /* Sources */,
+				F408D0C9184A4A7D00AC5FF0 /* Frameworks */,
+				F408D0CA184A4A7D00AC5FF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F408D0D1184A4A7D00AC5FF0 /* PBXTargetDependency */,
+			);
+			name = BleToOSCTests;
+			productName = BleToOSCTests;
+			productReference = F408D0CC184A4A7D00AC5FF0 /* BleToOSCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F408D0A3184A4A7C00AC5FF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Fiore Basile";
+				TargetAttributes = {
+					F408D0CB184A4A7D00AC5FF0 = {
+						TestTargetID = F408D0AA184A4A7C00AC5FF0;
+					};
+				};
+			};
+			buildConfigurationList = F408D0A6184A4A7C00AC5FF0 /* Build configuration list for PBXProject "BleToOSC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F408D0A2184A4A7C00AC5FF0;
+			productRefGroup = F408D0AC184A4A7C00AC5FF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F408D0AA184A4A7C00AC5FF0 /* BleToOSC */,
+				F408D0CB184A4A7D00AC5FF0 /* BleToOSCTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F408D0A9184A4A7C00AC5FF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F408D0B9184A4A7D00AC5FF0 /* InfoPlist.strings in Resources */,
+				F408D0C7184A4A7D00AC5FF0 /* Images.xcassets in Resources */,
+				F408D0BF184A4A7D00AC5FF0 /* Credits.rtf in Resources */,
+				F408D0C5184A4A7D00AC5FF0 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F408D0CA184A4A7D00AC5FF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F408D0D7184A4A7D00AC5FF0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F408D0A7184A4A7C00AC5FF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F408D0ED184A4A8D00AC5FF0 /* SensorFirmata.m in Sources */,
+				F408D0C2184A4A7D00AC5FF0 /* AppDelegate.m in Sources */,
+				F408D0BB184A4A7D00AC5FF0 /* main.m in Sources */,
+				F408D10B184A4D8300AC5FF0 /* AsyncUdpSocket.m in Sources */,
+				F408D105184A4C9100AC5FF0 /* OSCPacket.m in Sources */,
+				F408D10F184A4E0500AC5FF0 /* RegexKitLite.m in Sources */,
+				F408D0EB184A4A8D00AC5FF0 /* ADCircularBuffer.c in Sources */,
+				F408D102184A4C9100AC5FF0 /* NS+OSCAdditions.m in Sources */,
+				F408D0EC184A4A8D00AC5FF0 /* SensorDevice.m in Sources */,
+				F408D10A184A4D8300AC5FF0 /* AsyncSocket.m in Sources */,
+				F408D117184B522500AC5FF0 /* SensorViewController.m in Sources */,
+				F408D11A184B523800AC5FF0 /* OSCServerViewController.m in Sources */,
+				F408D0EE184A4A8D00AC5FF0 /* SensorUART.m in Sources */,
+				F408D104184A4C9100AC5FF0 /* OSCDispatcher.m in Sources */,
+				F408D103184A4C9100AC5FF0 /* OSCConnection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F408D0C8184A4A7D00AC5FF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F408D0D9184A4A7D00AC5FF0 /* BleToOSCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F408D0D1184A4A7D00AC5FF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F408D0AA184A4A7C00AC5FF0 /* BleToOSC */;
+			targetProxy = F408D0D0184A4A7D00AC5FF0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F408D0B7184A4A7C00AC5FF0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F408D0B8184A4A7C00AC5FF0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F408D0BD184A4A7D00AC5FF0 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F408D0BE184A4A7D00AC5FF0 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F408D0C3184A4A7D00AC5FF0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F408D0C4184A4A7D00AC5FF0 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		F408D0D5184A4A7D00AC5FF0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F408D0D6184A4A7D00AC5FF0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F408D0DA184A4A7D00AC5FF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F408D0DB184A4A7D00AC5FF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F408D0DD184A4A7D00AC5FF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BleToOSC/BleToOSC-Prefix.pch";
+				INFOPLIST_FILE = "BleToOSC/BleToOSC-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F408D0DE184A4A7D00AC5FF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BleToOSC/BleToOSC-Prefix.pch";
+				INFOPLIST_FILE = "BleToOSC/BleToOSC-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F408D0E0184A4A7D00AC5FF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BleToOSC.app/Contents/MacOS/BleToOSC";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BleToOSC/BleToOSC-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BleToOSCTests/BleToOSCTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F408D0E1184A4A7D00AC5FF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BleToOSC.app/Contents/MacOS/BleToOSC";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BleToOSC/BleToOSC-Prefix.pch";
+				INFOPLIST_FILE = "BleToOSCTests/BleToOSCTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F408D0A6184A4A7C00AC5FF0 /* Build configuration list for PBXProject "BleToOSC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F408D0DA184A4A7D00AC5FF0 /* Debug */,
+				F408D0DB184A4A7D00AC5FF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F408D0DC184A4A7D00AC5FF0 /* Build configuration list for PBXNativeTarget "BleToOSC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F408D0DD184A4A7D00AC5FF0 /* Debug */,
+				F408D0DE184A4A7D00AC5FF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F408D0DF184A4A7D00AC5FF0 /* Build configuration list for PBXNativeTarget "BleToOSCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F408D0E0184A4A7D00AC5FF0 /* Debug */,
+				F408D0E1184A4A7D00AC5FF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F408D0A3184A4A7C00AC5FF0 /* Project object */;
+}
