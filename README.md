@@ -18,6 +18,12 @@ Connect the BLE mini TX to Flora RX and RX to Flora TX, 3.3v and GND pins.
 
 Add a Lipo battery or plug in the USB cable to the Flora.
 
+Required software
+-----------------
+
+Make sure you checkout the repository using the recursive option, so you also get the submodules containing all the required dependencies into the deps folder.
+
+
 Instructions
 ------------
 
