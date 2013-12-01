@@ -1,0 +1,12 @@
+[submodule "deps/Adafruit_LSM303"]
+	path = deps/Adafruit_LSM303
+	url = git@github.com:adafruit/Adafruit_LSM303.git
+[submodule "deps/CocoaAsyncSocket"]
+	path = deps/CocoaAsyncSocket
+	url = git@github.com:robbiehanson/CocoaAsyncSocket.git
+[submodule "deps/CocoaOSC"]
+	path = deps/CocoaOSC
+	url = git@github.com:danieldickison/CocoaOSC.git
+[submodule "deps/ORSSerialPort"]
+	path = deps/ORSSerialPort
+	url = git@github.com:armadsen/ORSSerialPort.git
